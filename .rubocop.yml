@@ -1,0 +1,55 @@
+require:
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'vendor/bundle/**/*'
+    - 'tmp/**/*'
+    - 'log/**/*'
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+Layout/LineLength:
+  Max: 140
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Style/Documentation:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Style/LambdaCall:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+Lint/EmptyBlock:
+  Enabled: false
+Metrics/ClassLength:
+  Max: 600
+Metrics/ModuleLength:
+  Max: 400
+Metrics/MethodLength:
+  Max: 64
+Metrics/BlockLength:
+  Max: 200
+Metrics/BlockNesting:
+  Max: 4
+Metrics/AbcSize:
+  Max: 100
+Metrics/CyclomaticComplexity:
+  Max: 30
+Metrics/PerceivedComplexity:
+  Max: 20
+Bundler/OrderedGems:
+  Enabled: false
+Style/RedundantCondition:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: false
